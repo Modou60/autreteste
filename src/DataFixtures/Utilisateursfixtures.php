@@ -18,12 +18,9 @@ class Utilisateursfixtures extends Fixture
             $utilisateurs->setNom(" Nom N°$i ")
                 ->setPrenom(" Prénom N° $i ")
                 ->setDateNaissance(new DateTime())
-                ->setLogin(" Login N° $i ")
-                ->setPassWord(" Password N° $i ")
-                ->setAdresse(" adresse N° $i ")
+                ->setAdresse("Adresse n° $i")
                 ->setEmail(" Email N° $i ")
-                ->setPhoto(" photo N° $i ")
-                ->setRole($rol[0]);
+                ->setPhoto(" photo N° $i ");
 
             $manager->persist($utilisateurs);
             $manager->flush();

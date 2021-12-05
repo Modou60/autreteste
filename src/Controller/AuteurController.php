@@ -68,7 +68,7 @@ class AuteurController extends AbstractController
     public function afficherAuteur(Auteurs $auteurs): Response
     {
         return $this->render('auteur/affiche_auteur.html.twig', [
-             'article' => $auteurs->getArticle(),
+             'article' => $auteurs->getArticles(),
             'auteur' => $auteurs,
         ]);
     }
